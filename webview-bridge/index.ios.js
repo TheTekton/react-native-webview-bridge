@@ -14,25 +14,26 @@
  */
 'use strict';
 
-var React = require('react-native');
+var React = require('react');
+var ReactNative = require('react-native');
 var invariant = require('invariant');
 var keyMirror = require('keymirror');
 var resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource');
 
 var {
-  ActivityIndicatorIOS,
+  ActivityIndicator,
   EdgeInsetsPropType,
   StyleSheet,
   Text,
   View,
   WebView,
   requireNativeComponent,
-  PropTypes,
   UIManager,
   NativeModules: {
     WebViewBridgeManager
   }
-} = React;
+} = ReactNative;
+var { PropTypes } = React;
 
 var BGWASH = 'rgba(255,255,255,0.8)';
 var RCT_WEBVIEWBRIDGE_REF = 'webviewbridge';
@@ -66,7 +67,7 @@ type Event = Object;
 
 var defaultRenderLoading = () => (
   <View style={styles.loadingView}>
-    <ActivityIndicatorIOS />
+    <ActivityIndicator/>
   </View>
 );
 var defaultRenderError = (errorDomain, errorCode, errorDesc) => (
@@ -104,6 +105,8 @@ var WebViewBridge = React.createClass({
     onBridgeMessage: PropTypes.func,
 
     hideKeyboardAccessoryView: PropTypes.bool,
+
+    keyboardDisplayRequiresUserAction: PropTypes.bool,
   },
 
   getInitialState: function() {
@@ -240,7 +243,7 @@ var WebViewBridge = React.createClass({
   },
 
   getWebViewBridgeHandle: function(): any {
-    return React.findNodeHandle(this.refs[RCT_WEBVIEWBRIDGE_REF]);
+    return ReactNative.findNodeHandle(this.refs[RCT_WEBVIEWBRIDGE_REF]);
   },
 
   onLoadingStart: function(event: Event) {
