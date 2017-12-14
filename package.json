@@ -1,7 +1,7 @@
 {
-  "name": "react-native-webview-bridge",
+  "name": "rn-wkwebview-bridge",
   "version": "0.33.0",
-  "description": "React Native WebView Javascript Bridge",
+  "description": "React Native WKWebView Javascript Bridge",
   "main": "webview-bridge",
   "directories": {
     "example": "example",
@@ -22,7 +22,8 @@
   ],
   "author": "Ali Najafizadeh",
   "contributors": [
-    "Hunter Medney"
+    "Hunter Medney",
+    "Terrance Wood"
   ],
   "license": "MIT",
   "bugs": {
