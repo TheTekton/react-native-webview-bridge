@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4114DC5C1C187CCB003CD988 /* RCTWebViewBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114DC591C187CCB003CD988 /* RCTWebViewBridge.m */; };
 		4114DC5D1C187CCB003CD988 /* RCTWebViewBridgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114DC5B1C187CCB003CD988 /* RCTWebViewBridgeManager.m */; };
+		585E4A50EC878D30B9426A88 /* Pods_RNWKWebViewBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C65E506BDB4538CE2FB3AB /* Pods_RNWKWebViewBridge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,12 +25,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4114DC4C1C187C3A003CD988 /* libReact-Native-Webview-Bridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libReact-Native-Webview-Bridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C65E506BDB4538CE2FB3AB /* Pods_RNWKWebViewBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNWKWebViewBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4114DC4C1C187C3A003CD988 /* libRNWKWebViewBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNWKWebViewBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4114DC581C187CCB003CD988 /* RCTWebViewBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTWebViewBridge.h; sourceTree = SOURCE_ROOT; };
 		4114DC591C187CCB003CD988 /* RCTWebViewBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTWebViewBridge.m; sourceTree = SOURCE_ROOT; };
 		4114DC5A1C187CCB003CD988 /* RCTWebViewBridgeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTWebViewBridgeManager.h; sourceTree = SOURCE_ROOT; };
 		4114DC5B1C187CCB003CD988 /* RCTWebViewBridgeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTWebViewBridgeManager.m; sourceTree = SOURCE_ROOT; };
 		4114DC5F1C187CE4003CD988 /* webviewbridge.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = webviewbridge.js; sourceTree = "<group>"; };
+		5B558C166D00D117042AD6EE /* Pods-RNWKWebViewBridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWKWebViewBridge.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNWKWebViewBridge/Pods-RNWKWebViewBridge.release.xcconfig"; sourceTree = "<group>"; };
+		A7713D5EA49C90DE60293130 /* Pods-RNWKWebViewBridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWKWebViewBridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNWKWebViewBridge/Pods-RNWKWebViewBridge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,30 +41,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585E4A50EC878D30B9426A88 /* Pods_RNWKWebViewBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39F76B8D9F65392C24E404B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7713D5EA49C90DE60293130 /* Pods-RNWKWebViewBridge.debug.xcconfig */,
+				5B558C166D00D117042AD6EE /* Pods-RNWKWebViewBridge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4114DC431C187C3A003CD988 = {
 			isa = PBXGroup;
 			children = (
-				4114DC4E1C187C3A003CD988 /* React-Native-Webview-Bridge */,
+				4114DC4E1C187C3A003CD988 /* RNWKWebViewBridge */,
 				4114DC5E1C187CE4003CD988 /* scripts */,
 				4114DC4D1C187C3A003CD988 /* Products */,
+				39F76B8D9F65392C24E404B9 /* Pods */,
+				9C2717D10FB7AC6A05B8DCBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		4114DC4D1C187C3A003CD988 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4114DC4C1C187C3A003CD988 /* libReact-Native-Webview-Bridge.a */,
+				4114DC4C1C187C3A003CD988 /* libRNWKWebViewBridge.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4114DC4E1C187C3A003CD988 /* React-Native-Webview-Bridge */ = {
+		4114DC4E1C187C3A003CD988 /* RNWKWebViewBridge */ = {
 			isa = PBXGroup;
 			children = (
 				4114DC581C187CCB003CD988 /* RCTWebViewBridge.h */,
@@ -68,7 +84,7 @@
 				4114DC5A1C187CCB003CD988 /* RCTWebViewBridgeManager.h */,
 				4114DC5B1C187CCB003CD988 /* RCTWebViewBridgeManager.m */,
 			);
-			path = "React-Native-Webview-Bridge";
+			name = RNWKWebViewBridge;
 			sourceTree = "<group>";
 		};
 		4114DC5E1C187CE4003CD988 /* scripts */ = {
@@ -80,24 +96,34 @@
 			path = ../scripts;
 			sourceTree = "<group>";
 		};
+		9C2717D10FB7AC6A05B8DCBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00C65E506BDB4538CE2FB3AB /* Pods_RNWKWebViewBridge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4114DC4B1C187C3A003CD988 /* React-Native-Webview-Bridge */ = {
+		4114DC4B1C187C3A003CD988 /* RNWKWebViewBridge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4114DC551C187C3A003CD988 /* Build configuration list for PBXNativeTarget "React-Native-Webview-Bridge" */;
+			buildConfigurationList = 4114DC551C187C3A003CD988 /* Build configuration list for PBXNativeTarget "RNWKWebViewBridge" */;
 			buildPhases = (
+				D42E9BEB08B28EC86205B41C /* [CP] Check Pods Manifest.lock */,
 				4114DC481C187C3A003CD988 /* Sources */,
 				4114DC491C187C3A003CD988 /* Frameworks */,
 				4114DC4A1C187C3A003CD988 /* CopyFiles */,
+				EC6DBC7EB2AC7CB38684EF7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "React-Native-Webview-Bridge";
-			productName = "React-Native-Webview-Bridge";
-			productReference = 4114DC4C1C187C3A003CD988 /* libReact-Native-Webview-Bridge.a */;
+			name = RNWKWebViewBridge;
+			productName = RNWKWebViewBridge;
+			productReference = 4114DC4C1C187C3A003CD988 /* libRNWKWebViewBridge.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +140,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4114DC471C187C3A003CD988 /* Build configuration list for PBXProject "React-Native-Webview-Bridge" */;
+			buildConfigurationList = 4114DC471C187C3A003CD988 /* Build configuration list for PBXProject "RNWKWebViewBridge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -126,10 +152,46 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4114DC4B1C187C3A003CD988 /* React-Native-Webview-Bridge */,
+				4114DC4B1C187C3A003CD988 /* RNWKWebViewBridge */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D42E9BEB08B28EC86205B41C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNWKWebViewBridge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC6DBC7EB2AC7CB38684EF7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNWKWebViewBridge/Pods-RNWKWebViewBridge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4114DC481C187C3A003CD988 /* Sources */ = {
@@ -226,6 +288,7 @@
 		};
 		4114DC561C187C3A003CD988 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7713D5EA49C90DE60293130 /* Pods-RNWKWebViewBridge.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inhereted)",
@@ -233,7 +296,10 @@
 					"$(SRCROOT)/../../../node_modules/react-native/React/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -241,6 +307,7 @@
 		};
 		4114DC571C187C3A003CD988 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B558C166D00D117042AD6EE /* Pods-RNWKWebViewBridge.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inhereted)",
@@ -248,7 +315,10 @@
 					"$(SRCROOT)/../../../node_modules/react-native/React/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -257,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4114DC471C187C3A003CD988 /* Build configuration list for PBXProject "React-Native-Webview-Bridge" */ = {
+		4114DC471C187C3A003CD988 /* Build configuration list for PBXProject "RNWKWebViewBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4114DC531C187C3A003CD988 /* Debug */,
@@ -266,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4114DC551C187C3A003CD988 /* Build configuration list for PBXNativeTarget "React-Native-Webview-Bridge" */ = {
+		4114DC551C187C3A003CD988 /* Build configuration list for PBXNativeTarget "RNWKWebViewBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4114DC561C187C3A003CD988 /* Debug */,
