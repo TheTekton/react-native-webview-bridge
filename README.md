@@ -1,9 +1,7 @@
-# Looking for Maintainer(s)
-I have been really busy and I can't continue maintaing this repo alone. I would like to ask if anyone wants to help I can grant a permission both on github and npm to start merging a lot of request and dealing with issues.
+TODO:
 
-Please send me your github and npm id so I can add you in.
-
-Thanks!
+- Convert iOS WebView to WKWebView.
+- Update README.
 
 
 ## Please take a look at this [issue](https://github.com/alinz/react-native-webview-bridge/issues/109) first
@@ -30,7 +28,7 @@ in your react-native project, run `npm install react-native-webview-bridge --sav
 <p align="center">
     <img src ="https://raw.githubusercontent.com/alinz/react-native-webview-bridge/master/doc/assets/02.png" />
 </p>
-4. navigate to `node_modules/react-native-webview-bridge/ios` and add `React-Native-Webview-Bridge.xcodeproj` folder
+4. navigate to `node_modules/react-native-webview-bridge/ios` and add `RNWKWebViewBridge.xcodeproj` folder
 <p align="center">
     <img src ="https://raw.githubusercontent.com/alinz/react-native-webview-bridge/master/doc/assets/03.png" />
 </p>
@@ -148,7 +146,7 @@ const injectScript = `
                           WebViewBridge.send("got the message inside webview");
                         }
                       };
-                
+
                       WebViewBridge.send("hello from webview");
                     }
                   }());
@@ -167,7 +165,7 @@ var Sample2 = React.createClass({
         break;
     }
   },
-  
+
   render() {
     return (
       <WebViewBridge
