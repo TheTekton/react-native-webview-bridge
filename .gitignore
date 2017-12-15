@@ -1,2 +1,38 @@
-node_modules
+# General
+*.swp
+*.swo
+*.rbo
+*.gem
 .DS_Store
+.rbenv-version
+.rbx/
+xcuserdata
+project.xcworkspace
+DerivedData
+/concatenated.*
+
+# Yardoc
+.yardoc
+/doc
+
+# Specs
+spec/fixtures/banana-lib
+spec/fixtures/cache
+spec/fixtures/chameleon
+spec/fixtures/integration/Headers/
+spec/fixtures/snake
+spec/fixtures/vcr
+tmp
+
+# Ignore CocoaPods
+ios/Pods
+ios/Podfile.lock
+ios/**/Pods
+ios/**/Podfile.lock
+
+# IDEs
+*.xccheckout
+.idea/
+
+# npm
+node_modules
